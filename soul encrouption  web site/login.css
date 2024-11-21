@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+
+
+
+
+
+
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  gap: 50px;
+  width: 90%;
+  max-width: 1090px;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  position: relative;
+  margin-left: -260px; /* Reduce this value to bring it closer to the left */
+  padding-top: 280px; /* Ensure there is no extra padding affecting alignment */
+}
+
+.left-image {
+  width: 370px; /* Adjust size as needed */
+  position: absolute;
+  top: 80px; /* Adjust position relative to the heading */
+  left: -60px; /* Adjust alignment */
+}
+
+.left-section h1 {
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  color: #4d4d4d;
+  margin-top: 50px; /* Add space below the image */
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ff4081;
+}
+.features-list {
+  list-style: none;
+  margin-bottom: 30px;
+}
+.features-list li {
+  color: #8a8788;
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.features-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /* Container for profile cards and heart background */
+    .profile-cards-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+    /* Heart background */
+    .heart-background {
+      position: absolute;
+      width: 90%; /* Adjust size as needed */
+      height: auto;
+      z-index: 1;
+      opacity: 0.1; /* Faint appearance */
+    }
+    
+    /* Profile cards container */
+    .profile-cards {
+      display: flex;
+      gap: 20px;
+      z-index: 2; /* Above the heart background */
+    }
+    
+    /* Individual card styling */
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      
+    
+    }
+    
+     
+
+
+
+
+
+
+
+
+    /* Profile images */
+    .card img {
+      width: 145px;
+      height: 150px;
+     border-radius: 15px;
+      object-fit: cover;
+    }
+    
+    /* Profile names */
+    .card p {
+      font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right Section */
+
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-image {
+  width: 80%;
+  max-width: 250px; /* Adjust this to your image's size */
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+.bear-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  animation: bearHug 1s ease forwards; /* Trigger the animation on page load */
+}
+
+.bear-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.bear-image.left {
+ 
+  left: 0;
+}
+
+.bear-image.right {
+  top: 11px;
+  right: 0;
+}
+
+.bear-image-left, .bear-image-right {
+  width: 100%;
+  max-width: 120px; /* Adjust the size of the bears image as needed */
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Keyframes for automatic bear hug */
+@keyframes bearHug {
+  0% {
+      transform: translateX(0); /* Starting position */
+  }
+  100% {
+      transform: translateX(0); /* Final position */
+  }
+}
+
+.bear-images-container .bear-image.left {
+  animation: moveLeft 2s ease forwards;
+}
+
+.bear-images-container .bear-image.right {
+  animation: moveRight 2s ease-in-out forwards;
+}
+
+/* Animation to move the left bear towards the right */
+@keyframes moveLeft {
+  0% {
+      transform: translateX(0); /* Starting position */
+  }
+  100% {
+      transform: translateX(170px); /* Move the left bear to the right */
+  }
+}
+
+/* Animation to move the right bear towards the left */
+@keyframes moveRight {
+  0% {
+      transform: translateX(0); /* Starting position */
+  }
+  100% {
+      transform: translateX(-190px); /* Move the right bear to the left */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-section {
+  margin-top: 200px;
+  flex: 0.8;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.right-section h2 {
+  font-size: 28px;
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  color: #333;
+}
+.right-section p {
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.illustration {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Login Box Styling */
+.login-box {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  margin-left: 28px;
+  margin-top: 148px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.login-box h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #ff0084; /* Pink color for heading */
+  margin-bottom: 20px;
+}
+
+/* Input Container Styling */
+.input-container {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Individual label classes */
+.email-label,
+.password-label {
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Individual input classes */
+.email-input,
+.password-input {
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  width: 85%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on email and password inputs */
+.email-input:hover,
+.password-input:hover {
+  border-color: #ff0084; /* Pink border on hover */
+  box-shadow: 0 0 8px rgba(255, 0, 132, 0.3); /* Light pink shadow */
+}
+
+/* Focus effect (click) on email and password inputs */
+.email-input:focus,
+.password-input:focus {
+  border: 1px solid #ff0084; /* Pink border color when focused */
+  box-shadow: 0px 0px 3px rgba(255, 0, 132, 0.9); /* Light pink shadow */
+  filter: blur(0.6px); /* Blurring only the border */
+}
+
+/* Forgot Password Link */
+a {
+  font-size: 14px;
+  color: #ff0084;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color: #e10072;
+}
+
+/* Sign In Button */
+button {
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  background-color: #ff0084; /* Pink background */
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 17px;
+  cursor: pointer;
+ 
+}
+
+button:hover {
+  background-color: #e10072; /* Darker pink on hover */
+}
+
+/* Sign Up & Help Center Links */
+.sign-up {
+  font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.sign-up p {
+  font-size: 14px;
+  color: #333;
+}
+
+.sign-up a {
+  color: #ff0084;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  color: #e10072;
+}
+/* password styling  */
+/* Input Container for Password */
+.password-input-container {
+  position: relative;
+  
+}
+
+/* Password input box */
+.password-input {
+  width: 310px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+/* Eye icon styling */
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+/* Eye icon on hover */
+.eye-icon:hover {
+  color: #ff0084; /* Pink color on hover */
+}
+
+/* Password input focus effect */
+.password-input:focus {
+  border: 2px solid #ff0084;
+  box-shadow: 0 0 8px rgba(255, 0, 132, 0.5);
+}

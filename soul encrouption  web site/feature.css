@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: -156px;
+    background: rgba(255, 255, 255, 0.9);
+   
+}
+
+.logo {
+padding-left: 20px;
+
+    font-weight: bold;
+    color: #5867dd; /* Use a color that matches your theme */
+}
+/* Overall Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: space-between; /* Align links and buttons on opposite ends */
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Style for the navigation links (Features, Pricing, etc.) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    margin-right: 33px; /* Added margin to push links away from buttons */
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Set desired font weight */
+    font-size: 15px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    color: #333; /* Dark gray color for links */
+    text-decoration: none; /* Remove underline */
+    letter-spacing: 1px; /* Adds a little space between letters */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+/* Styling for the 'Features' link */
+.main-nav ul li:first-child a {
+    color: #ff4081;
+}
+
+/* Styling for the navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+    margin-right: 220px;
+}
+
+/* Style for 'Try For Free' and 'Partner With Us' buttons */
+.button {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold text */
+    background-color: #ff4081; /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Slightly larger for the buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background color and shadow change */
+    text-transform: initial; /* Text will appear in original casing */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+.button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Hover shadow effect */
+  }
+  
+
+/* Style for 'Login' link */
+.login-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold text */
+    color: #ff4081; /* Pink color for 'Login' */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Smaller size for login similar to the navigation links */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* body styling start  */
+.content {
+    margin-top: 10rem;
+    text-align: center;
+    padding-bottom: 20rem;
+}
+.content h1 {
+    font-size: 40px;
+    color: #5c5b5b;
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+  }
+
+/* Paragraph */
+.content p {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color:#8a8989;
+    margin-bottom: 30px;
+  }
+ 
+  .background-decorations {
+    position: absolute;
+    top: 270px;
+    left: 27px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1; /* Ensure it's behind the content */
+    background-image: url('featurebackground.png'); /* Replace with the path to your decorative image */
+    background-repeat: no-repeat;
+ }
+ /* button1 tyling
+ /* Button Styling */
+.button1 {
+    text-decoration: none;
+    background-color: #ff5aa7; /* Bright pink */
+    color: white;
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button1:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+  }
+/* cards styling */
+/* Container to align cards with a smaller gap */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Reduced gap between cards */
+    margin-top: 50px; /* Reduced top margin */
+    padding: 20px;
+}
+
+/* General card styling with adjusted dimensions */
+.info-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 370px; /* Adjusted width to match the image */
+    height: 380px; /* Fixed height for consistent look */
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: 'Roboto', 'Lato', 'Arial', sans-serif;
+}
+
+/* Top rounded colored bar */
+.info-card::before {
+    content: "";
+    display: block;
+    height: 25px; /* Adjusted height for the colored bar */
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Different colors for each card */
+.pink-border::before {
+    background-color: #ff3b83;
+}
+
+.teal-border::before {
+    background-color: #09dbb8;
+}
+
+.yellow-border::before {
+    background-color: #ffb300;
+}
+
+/* Inner content styling with spacing below colored bar */
+.card-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 20px;
+}
+
+/* Header and Explore More link styling */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header h3 {
+    font-size: 23px; /* Slightly smaller font size */
+    font-weight: bold;
+    color: #545454;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.explore-link {
+    text-decoration: none;
+    font-size: 14px; /* Adjusted font size for the link */
+    color: #519ae9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.explore-link:hover {
+    text-decoration: none;
+}
+
+/* Paragraph styling */
+.info-card p {
+    color: #545454 ;
+  font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Hover effect for cards */
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* commas styling or more */
+
+
+
+.testimonial-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fce7f3;
+  border-radius: 20px;
+  max-width: 900px;
+  margin-left: 245px;
+}
+.testimonial-section h2{
+  color: #4d4d4d;
+}
+.testimonial-section p{
+ 
+    color: #7e7d7e;
+}
+.description {
+  margin-bottom: 35px; /* Adjust this value as needed */
+}
+
+.testimonial-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 45px;
+  
+}
+.customer-name {
+  font-weight: bold;
+  color:#383434; /* Change this color to your desired color */
+}
+
+
+
+.testimonial-card.active {
+  display: flex;
+}
+
+.customer-image {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.comma-image {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.left-comma {
+  top: 10px;
+  left: 20px;
+}
+
+.right-comma {
+  bottom: 35px;
+  right: 10px;
+}
+
+.navigation-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  color: #e91e63;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.testimonial-pagination {
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #e91e63;
+}
+
+/* Logo image styling */
+.logo-image {
+  width: 250px; /* Adjust width as needed */
+  height: auto;
+  margin-left: 145px; /* Space between the heading text and logo */
+  margin-bottom: -320px;
+  vertical-align: middle; /* Aligns logo with the text baseline */
+
+}
+/* styling of h and p of about-section */
+.about-section h2 {
+margin-top: 190px;
+margin-left: 140px;
+margin-bottom: 18px;
+color: #575757;
+
+}
+
+.about-section p{
+  margin-left: 140px;
+  color: #8a8989;
+}
+
+/* limking styling */
+.link-section {
+  margin-top: -150px;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 4rem; /* Increased gap to match the spacing in the image */
+  font-family: Arial, sans-serif;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-section a {
+  text-decoration: none;
+  color: #6e6e6e; /* Adjusted to match the gray color in the image */
+  font-size: 18px; /* Font size as seen in the image */
+  font-weight: 500; /* Slightly bolder weight for readability */
+  transition: color 0.3s;
+}
+
+.link-section a:hover {
+  color: #333; /* Optional: Slightly darker shade on hover */
+}
+/* Social Media Icons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  transition: opacity 0.3s ease; /* Smooth hide/show transition */
+}
+
+.icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Icon hover effect */
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  color: white;
+}
+/* Footer Styling */
+.footer {
+  margin-top: 90px;
+  background-color: #ff4081; /* Pink background similar to the image */
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 20px;
+}
+
+.footer p {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+

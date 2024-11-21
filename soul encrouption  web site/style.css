@@ -1,0 +1,840 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+/* header styling  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: -156px;
+    background: rgba(255, 255, 255, 0.9);
+   
+}
+
+.logo {
+padding-left: 20px;
+
+    font-weight: bold;
+    color: #5867dd; /* Use a color that matches your theme */
+}
+/* Overall Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: space-between; /* Align links and buttons on opposite ends */
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Style for the navigation links (Features, Pricing, etc.) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    margin-right: 33px; /* Added margin to push links away from buttons */
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Set desired font weight */
+    font-size: 15px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    color: #333; /* Dark gray color for links */
+    text-decoration: none; /* Remove underline */
+    letter-spacing: 1px; /* Adds a little space between letters */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Styling for the navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+    margin-right: 220px;
+}
+
+/* Style for 'Try For Free' and 'Partner With Us' buttons */
+.button {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold text */
+    background-color: #ff4081; /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Slightly larger for the buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background color and shadow change */
+    text-transform: initial; /* Text will appear in original casing */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+.button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Hover shadow effect */
+  }
+  
+
+/* Style for 'Login' link */
+.login-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold text */
+    color: #ff4081; /* Pink color for 'Login' */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Smaller size for login similar to the navigation links */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.hero {
+    /* text-align: center; */
+    padding: 100px 20px;
+    color: #333;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    
+    color: #4d4d4d;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2em;
+color: #6c6c6c;
+}
+/* three imges styling */
+/* Container to hold all custom cards and align them in a row */
+ .main-card{
+ margin-left: 40rem;  
+
+} 
+.cards-container {
+    display: flex; /* Flexbox to arrange items in a row */
+    justify-content: center; /* Center cards horizontally */
+    align-items: flex-start; /* Align the top of the cards */
+    width: 55rem;
+  
+    margin-top: 50px;
+   
+}
+
+/* General settings for custom cards with full-color borders */
+.custom-card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    border: 8px solid transparent; /* Base for consistent borders */
+    height: 355px;
+    width: 265px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* First card (yellow border) */
+.first-card {
+    border-color:#ffb300; /* Matches yellow label */
+    transform: rotate(-6deg);
+    right: 8px;
+    background-color:#ffb300 ;
+}
+
+/* Second card (green border) */
+.second-card {
+    border-color: #09dbb8; /* Matches green label */
+    transform: rotate(0deg);
+    background-color: #09dbb8;
+    top: 63px;
+    right: 115px;
+    z-index: -1;
+}
+
+/* Third card (pink border) */
+.third-card {
+    border-color: #ff3b83; /* Matches pink label */
+    transform: rotate(4deg);
+    background-color: #ff3b83;
+    top:110px ;
+    right:215px ;
+    z-index: -2;
+}
+
+/* Keep images straight and properly aligned */
+.custom-card img {
+    width: 100%;
+    height: 282px;
+    object-fit: cover;
+}
+
+/* Full-color borders for the labels */
+.yellow-label {
+    background-color: #ffb300;
+    
+}
+
+.green-label {
+    background-color: #09dbb8;
+}
+
+.pink-label {
+    background-color: #ff3b83;
+}
+
+/* Label styles */
+.label {
+    color: #fff;
+    text-align: center;
+    /* font-family: 'Roboto', 'Lato', 'Montserrat', sans-serif; */
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.cards-container:hover .custom-card {
+    transform: translate(40px, 60px) scale(1.2); 
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5); 
+}
+
+
+.custom-card:hover ~ .custom-card {
+    transform: translate(40px, 60px) scale(1.2); 
+} 
+
+/* try for free or discover more  styling */
+.cta-container {
+    display: flex;
+    align-items: center; /* Vertically align the button and text */
+    gap: 15px; /* Space between the button and the text */
+    margin-top: 100px; /* Adjust margin if needed */
+    margin-left: 105px;
+}
+
+.try-for-free-btn {
+    background-color: #ff3b83;
+    color: white;
+    padding: 16px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Hero section container */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px; /* Adds space between the button and the link */
+}
+
+/* Styling for the discover more link */
+.discover-more {
+    color: #00aaff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Styling for the Font Awesome arrow icon */
+.discover-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.discover-more:hover i {
+    transform: translateY(3px); /* Moves the arrow slightly down */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 10px; /* Reduce space between elements on smaller screens */
+    }
+
+    .discover-more {
+        font-size: 14px;
+    }
+}
+
+/* six  images styling */
+/* Profile section container */
+.profile-section {
+    text-align: left; /* Align text and images to the left */
+    margin-top: 30px;
+    margin-left: 125px;
+    padding: 20px;
+}
+
+/* Title styling */
+.profile-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4d4d4d;
+    margin-top: 35px;
+    margin-left: -30px;
+}
+
+/* Profile images container */
+.profile-images {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: -30px; /* To collapse them more towards each other */
+    margin-top: 20px;
+
+}
+
+/* Individual profile image styling */
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    margin-left: -15px; /* Overlapping effect */
+    z-index: 1;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover effect */
+.profile-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    z-index: 10; /* Bring the hovered image to the front */
+}
+/* General container for the profile images and the text */
+.new-profiles-section {
+    text-align: center; /* Center align everything */
+    margin-top: 70px;   /* Space between the images and text */
+}
+
+/* Heading section */
+.heading-section h2 {
+    font-size: 37px;
+    font-family: 'Poppins', sans-serif;
+    color: #4d4d4d;  /* Specified color */
+    font-weight: bold;
+    margin: 10px 0; /* Adjust margin for spacing */
+}
+
+.heading-section p {
+    font-size: 18px;
+   font-family:'Poppins', sans-serif;
+    color:#828181; /* Specified color */
+    margin-top: 25px;
+}
+
+/* Container for the cards */
+.card-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+/* Card container styling */
+.stat-card {
+    width: 350px; /* Adjust card width */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.stat-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Header (colored section) */
+.stat-header {
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Circle with percentage */
+.stat-percentage {
+    border-radius: 90%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 40px auto 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Body (text section) */
+.stat-body p {
+    color: #4d4d4d; /* Dark gray color */
+    font-size: 16px;
+    margin: 0 20px;
+}
+
+/* Specific styling for each card */
+.stat-card-1 .stat-header {
+    background-color: #ffb600; /* Yellow color */
+}
+
+.stat-card-1 .stat-percentage {
+    background-color: #ffb600; /* Darker yellow for the circle */
+}
+
+.stat-card-2 .stat-header {
+    background-color: #20c997; /* Light teal color */
+}
+
+.stat-card-2 .stat-percentage {
+    background-color: #20c997; /* Teal color for the circle */
+}
+
+.stat-card-3 .stat-header {
+    background-color: #ff4081; /* Light pink color */
+}
+
+.stat-card-3 .stat-percentage {
+    background-color: #ff4081; /* Pink color for the circle */
+}
+
+/* Plan section styling with padding, border radius, and top margin */
+.plan-section {
+    background-image: url('background.PNG'); /* Background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 40px; /* Add padding for left and right sides */
+    text-align: center;
+    border-radius: 20px; /* Add rounded corners */
+    background-color: #fdf3f7; /* Light pink background behind the image */
+    margin: 50px 20px 0; /* Add margin-top: 50px for space from the top */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Text content */
+.plan-content h1 {
+    color: #4d4d4d;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.plan-content p {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Button styling */
+.plan-btn {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.plan-btn:hover {
+    background-color: #ff5a91;
+}
+
+/* Plan section */
+.plan-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #fff3f9;
+    border-radius: 15px;
+    margin: 150px 20px; /* Adding margin from top */
+}
+
+.plan-container h1 {
+    font-size: 36px;
+    color: #4d4d4d; /* New color for heading */
+    margin-bottom: 20px;
+}
+
+.plan-container p {
+    font-size: 18px;
+    color: #757575; /* New color for paragraph */
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff4081;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ff5a91;
+}
+/* circle and heart styling */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 11rem;
+    position: relative;
+}
+
+/* Decorative circles */
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    /* animation: orbit 10s linear infinite;  */
+     /* Rotation animation */
+}
+.pink-circle{
+    width: 100px;
+    height: 100px;
+    transform: rotate(-10deg);
+    border-radius: 30% 26% 24% 28%;
+    background-color: rgb(255, 206, 214); /* Light orange */
+    left: 175px;
+    top: 48px;
+    animation: pink-rotation 2s ease-in-out infinite alternate; /* Adjust duration as needed */
+     /* transform-origin: 190px 130px;  */
+      /* Adjusted for orbit  */
+}
+
+.orange-circle {
+    width: 170px;
+    height: 170px;
+    transform: rotate(-10deg);
+    border-radius: 100% 100% 100% 100%;
+    background-color: #ffd27d; /* Light orange */
+    left: 10rem;
+    top: 40px;
+    transform-origin: 200px 170px;
+    animation: orange-half-orbit 5s ease-in-out infinite alternate;
+    /* animation: half-orbit 5s ease-in-out infinite alternate; */
+    /* transform-origin: 200px 200px; */
+}
+
+.blue-circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 100% 100% 100% 100%;
+    background-color: #b3e5fc; /* Light blue */
+    left: 14rem;
+    top: 13rem;
+    transform-origin: 177px 0px;
+    transform: rotate(-10deg);
+    animation: blue-half-orbit 5s ease-in-out infinite alternate;
+}
+
+/* Decorative heart */
+.decorative-heart {
+    position: absolute;
+    top: -25px;
+    left: 36rem;
+    width: 30px;
+    height: 30px;
+    background-color: #ffccd5; /* Pink */
+    transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    animation: heart-rotation 1.5s ease-in-out infinite alternate; /* Reduced duration */
+}
+
+.decorative-heart::before,
+.decorative-heart::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #ffccd5;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.decorative-heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.decorative-heart::after {
+    top: 0;
+    left: 15px;
+}
+/* all animation styling  */
+/* Keyframe for pink circle rotation */
+@keyframes pink-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* orange circle styling */
+@keyframes orange-half-orbit {
+    0% {
+        transform: rotate(80deg);
+    }
+    100% {
+        transform: rotate(130deg);
+    }
+}
+/* blue circle styling */
+
+@keyframes blue-half-orbit {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-80deg); /* Rotates in the opposite direction */
+    }
+}
+
+/* Keyframe for faster heart rotation */
+@keyframes heart-rotation {
+    0% {
+        transform: rotate(-80deg);
+    }
+    100% {
+        transform: rotate(40deg);
+    }
+}
+
+
+/* Main circular image */
+.image-container {
+    margin-left: 12rem;
+    width: 370px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text styling */
+.text-content {
+    
+    margin-top: 80px;
+    max-width: 542px;
+}
+
+.text-content h1 {
+    font-size: 34px;
+    color: #8f8f8e;
+    /* color: #4d4d4d; */
+    margin: 0;
+    font-weight: bold;
+}
+
+.text-content h2 {
+    font-size: 34px;
+  color: #5f5e5e; /* Updated heading color */
+  margin-bottom: 15px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #a2a2a1; /* Updated paragraph color */
+    margin-bottom: 40px;
+}
+
+.cta-button {
+
+     background-color: #ff4081;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;  
+}
+.cta-button:hover{
+    background-color: #e73370; /* Darker pink on hover */
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2); /* Stronger border shadow on hover */
+}
+
+
+
+
+
+/* About section styling */
+.about-section {
+    max-width: 600px;
+    margin-top: 10rem; /* Adjusts spacing between the circle image and the text section */
+    text-align: left;
+    margin-left: -90px;
+    padding-left: 12rem;
+    
+}
+
+.about-section h2 {
+    font-size: 20.5px; /* Adjust font size to match the image */
+    color: #4d4d4d; /* Dark gray color for heading */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about-section p {
+    font-size: 1rem; /* Smaller font size for paragraph */
+    color: #757575; /* Lighter gray color for paragraph */
+    line-height: 1.6;
+}
+/* Logo image styling */
+.logo-image {
+    width: 250px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 0px; /* Space between the heading text and logo */
+    margin-bottom: 25px;
+    vertical-align: middle; /* Aligns logo with the text baseline */
+
+}
+/* limking styling */
+.link-section {
+    margin-top: -188px;
+    margin-right: 25rem;
+    display: flex;
+    justify-content: flex-end;
+  
+    gap: 4rem; /* Increased gap to match the spacing in the image */
+    font-family: Arial, sans-serif;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-section a {
+    text-decoration: none;
+    color: #6e6e6e; /* Adjusted to match the gray color in the image */
+    font-size: 18px; /* Font size as seen in the image */
+    font-weight: 500; /* Slightly bolder weight for readability */
+    transition: color 0.3s;
+}
+
+.link-section a:hover {
+    color: #333; /* Optional: Slightly darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    transition: opacity 0.3s ease; /* Smooth hide/show transition */
+}
+
+.icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Specific Icon Colors */
+.facebook { background-color: #3b5998; }   /* Facebook */
+.twitter { background-color: #1da1f2; }    /* Twitter */
+.youtube { background-color: #ff0000; }    /* YouTube */
+.pinterest { background-color: #bd081c; }  /* Pinterest */
+.instagram { background-color: #e1306c; }  /* Instagram */
+
+/* Icon hover effect */
+.icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    color: white;
+}
+/* Footer Styling */
+.footer {
+    margin-top: 90px;
+    background-color: #ff4081; /* Pink background similar to the image */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+}
+
+.footer p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+

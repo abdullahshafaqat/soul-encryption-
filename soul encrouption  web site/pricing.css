@@ -1,0 +1,412 @@
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: -156px;
+    background: rgba(255, 255, 255, 0.9);
+   
+}
+
+.logo {
+padding-left: 20px;
+
+    font-weight: bold;
+    color: #5867dd; /* Use a color that matches your theme */
+}
+/* Overall Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: space-between; /* Align links and buttons on opposite ends */
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Style for the navigation links (Features, Pricing, etc.) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    margin-right: 33px; /* Added margin to push links away from buttons */
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Set desired font weight */
+    font-size: 15px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    color: #333; /* Dark gray color for links */
+    text-decoration: none; /* Remove underline */
+    letter-spacing: 1px; /* Adds a little space between letters */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+/* Styling for the 'Pricing' link */
+.main-nav ul.nav-links li:nth-child(2) a { 
+    color: #ff4081;
+}
+
+
+/* Styling for the navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+    margin-right: 220px;
+}
+
+/* Style for 'Try For Free' and 'Partner With Us' buttons */
+.button {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold text */
+    background-color: #ff4081; /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Slightly larger for the buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background color and shadow change */
+    text-transform: initial; /* Text will appear in original casing */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+.button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Hover shadow effect */
+  }
+  
+
+/* Style for 'Login' link */
+.login-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold text */
+    color: #ff4081; /* Pink color for 'Login' */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Smaller size for login similar to the navigation links */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+/* Centering the main content */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 0vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center-content h1 {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #4d4d4d;
+}
+
+.center-content p {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #868585;
+}
+
+
+
+
+
+/* Card styling */
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    background-color: #ff4081;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 400px;
+    height:470px; /* Set height to make it similar to the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 110px; /* Adds space at the top */
+    margin-left: 70px; /* Adds space on the left */
+}
+
+/* Text content styling */
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 400; /* Normal weight for "Save More" */
+}
+
+.text-content h3 {
+    font-size: 1.2em;
+    font-weight: 700; /* Bold weight for "With Goodplans." */
+    margin: 5px 0;
+}
+
+.text-content h3 span {
+    font-weight: 700; /* Ensure bold style is only applied to this part */
+}
+
+.text-content p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 10px 0;
+    font-weight: 400; /* Normal weight for paragraph */
+}
+
+/* Arrow icon styling */
+.arrow {
+    font-size: 1.5em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Image content styling */
+.image-content {
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    width: 300px;
+    height: auto;
+}
+
+.image-content img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* freemium card styling  */
+.freemium-card {
+    width: 360px;
+    padding: 25px;
+    margin-top: -470px; /* Adjust this value for more/less top margin */
+    margin-left: 33rem; /* Adjust this value for more/less left margin */
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(163, 161, 162, 0.5); /* Added shadow at the bottom */
+    background-color: #ffffff;
+    text-align: center;
+   height: 40rem;
+}
+
+.card-header {
+    background-color: #ff4081;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+    margin: -20px -20px 20px;
+    text-align: center;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #a3a3a3;
+    font-size: 16px;
+}
+
+.feature-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    color: #ff4081;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.choose-button {
+    display: inline-block;
+    margin-top: 120px;
+    padding: 5px 115px;
+    background-color: #ff4081;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.choose-button:hover {
+    background-color: #e0356b;
+}
+
+
+/* premium card styling  */
+.premium-card {
+    width: 360px;
+    height: 40rem;
+    padding: 25px;
+   position: absolute;
+   right: 80px;
+   top: 390px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(163, 161, 162, 0.5); /* Added shadow at the bottom */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #ff4081;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px 10px 0 0;
+    margin: -25px -25px 20px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #a3a3a3;
+}
+
+.feature-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.5; /* Adjust for line spacing */
+}
+
+.check {
+    color: #ff4081;
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.premium-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 115px;
+    background-color: #ff4081;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.premium-button:hover {
+    background-color: #e0356b;
+}
+
+/* About section styling */
+.about-section {
+    max-width: 600px;
+    margin-top: 10rem; /* Adjusts spacing between the circle image and the text section */
+    text-align: left;
+    margin-left: -90px;
+    padding-left: 12rem;
+    
+}
+
+.about-section h2 {
+    font-size: 20.5px; /* Adjust font size to match the image */
+    color: #4d4d4d; /* Dark gray color for heading */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.about-section p {
+    font-size: 1rem; /* Smaller font size for paragraph */
+    color: #757575; /* Lighter gray color for paragraph */
+    line-height: 1.6;
+}
+/* Logo image styling */
+.logo-image {
+    width: 250px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 0px; /* Space between the heading text and logo */
+    margin-bottom: 25px;
+    vertical-align: middle; /* Aligns logo with the text baseline */
+
+}
+/* limking styling */
+.link-section {
+    margin-top: -188px;
+    margin-right: 25rem;
+    display: flex;
+    justify-content: flex-end;
+  
+    gap: 4rem; /* Increased gap to match the spacing in the image */
+    font-family: Arial, sans-serif;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-section a {
+    text-decoration: none;
+    color: #6e6e6e; /* Adjusted to match the gray color in the image */
+    font-size: 18px; /* Font size as seen in the image */
+    font-weight: 500; /* Slightly bolder weight for readability */
+    transition: color 0.3s;
+}
+
+.link-section a:hover {
+    color: #333; /* Optional: Slightly darker shade on hover */
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 90px;
+    background-color: #ff4081; /* Pink background similar to the image */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+}
+
+.footer p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}

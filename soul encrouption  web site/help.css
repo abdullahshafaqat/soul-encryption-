@@ -1,0 +1,310 @@
+
+/* Importing Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: -156px;
+    background: rgba(255, 255, 255, 0.9);
+   
+}
+
+.logo {
+padding-left: 20px;
+
+    font-weight: bold;
+    color: #5867dd; /* Use a color that matches your theme */
+}
+/* Overall Navigation Styling */
+.main-nav {
+    display: flex;
+    justify-content: space-between; /* Align links and buttons on opposite ends */
+    align-items: center;
+    padding: 10px 0;
+}
+
+/* Style for the navigation links (Features, Pricing, etc.) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+    margin-right: 33px; /* Added margin to push links away from buttons */
+}
+
+.nav-links a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* Set desired font weight */
+    font-size: 15px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    color: #333; /* Dark gray color for links */
+    text-decoration: none; /* Remove underline */
+    letter-spacing: 1px; /* Adds a little space between letters */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Styling for the 'help' link */
+.main-nav ul.nav-links li:nth-child(4) a { 
+    color: #ff4081;
+}
+
+
+/* Styling for the navigation buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center;
+    margin-right: 220px;
+}
+
+/* Style for 'Try For Free' and 'Partner With Us' buttons */
+.button {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold text */
+    background-color: #ff4081; /* Pink background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Spacing inside button */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px; /* Slightly larger for the buttons */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth background color and shadow change */
+    text-transform: initial; /* Text will appear in original casing */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+.button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); /* Hover shadow effect */
+  }
+  
+
+/* Style for 'Login' link */
+.login-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold text */
+    color: #ff4081; /* Pink color for 'Login' */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Smaller size for login similar to the navigation links */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+.support-section {
+    text-align: center;
+    color: #333333;
+}
+
+.support-title {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #3b3b3b;
+     margin: 0;
+}
+
+.support-subtitle {
+    font-family: 'Poppins', sans-serif,'Roboto', 'Lato', 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #888888;
+    margin-top: 8px;
+}
+
+/* FAQ'S all styling */
+
+.faq-section {
+    
+    margin-left: 140px;
+    width: 60%;
+    padding: 20px;
+   
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease; 
+}
+
+.answer {
+    display: none;
+    padding: 10px 0;
+    color: #555;
+}
+
+.arrow {
+    transform: rotate(90deg); /* Initial direction set to point to the right */
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #333; /* Default color for the arrow */
+}
+
+.question.active .arrow {
+    transform: rotate(-90deg); /* Rotate arrow to point upward when active */
+    color: #ff69b4;
+}
+
+.question.active {
+    color: #ff69b4; /* Change question text color to pink when active */
+}
+
+/* contact card styling  */
+.contact-support-card {
+    margin-top: -40rem;
+    margin-right: 60px;
+    float: right;
+    background-color: #ff4081;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.contact-support-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-support-card p {
+    margin: 5px 0;
+}
+
+.contact-support-card a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Logo image styling */
+.logo-image {
+    width: 250px; /* Adjust width as needed */
+    height: auto;
+    margin-left: 145px; /* Space between the heading text and logo */
+    margin-bottom: -320px;
+    vertical-align: middle; /* Aligns logo with the text baseline */
+  
+  }
+  /* styling of h and p of about-section */
+  .about-section h2 {
+  margin-top: 190px;
+  margin-left: -660px;
+  margin-bottom: 18px;
+  color: #575757;
+  
+  }
+  
+  .about-section p{
+    margin-left: 140px;
+    color: #8a8989;
+  }
+  
+  /* limking styling */
+  .link-section {
+    margin-top: -150px;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: flex-end;
+  
+    gap: 4rem; /* Increased gap to match the spacing in the image */
+    font-family: Arial, sans-serif;
+  }
+  
+  .link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .link-section a {
+    text-decoration: none;
+    color: #6e6e6e; /* Adjusted to match the gray color in the image */
+    font-size: 18px; /* Font size as seen in the image */
+    font-weight: 500; /* Slightly bolder weight for readability */
+    transition: color 0.3s;
+  }
+  
+  .link-section a:hover {
+    color: #333; /* Optional: Slightly darker shade on hover */
+  }
+  /* Social Media Icons */
+  .social-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    transition: opacity 0.3s ease; /* Smooth hide/show transition */
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  /* Icon hover effect */
+  .icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    color: white;
+  }
+  /* Footer Styling */
+  .footer {
+    margin-top: 90px;
+    background-color: #ff4081; /* Pink background similar to the image */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 20px;
+  }
+  
+  .footer p {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  

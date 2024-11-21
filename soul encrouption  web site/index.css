@@ -1,0 +1,101 @@
+
+/* Memorial section styling */
+.memorial-section {
+  padding: 100px 20px;
+  /* background-color: #fffafc; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.memorial-container {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  gap: 170px; /* Add space between image and text */
+}
+
+/* Image styling */
+.memorial-image img {
+  margin-top: -141px;
+  margin-left: 77px;
+  border-radius: 50%;
+  max-width: 390px; /* Limit the size of the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Background decorations for half-circle, square, and heart */
+.memorial-image::before,
+.memorial-image::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+}
+
+.memorial-image::before {
+  /* Orange half-circle */
+  width: 150px;
+  height: 150px;
+  background-color: #ffb74d; /* Orange */
+  border-radius: 100% 0 0 100%; /* Left half-circle */
+  top: 20px;
+  left: -60px;
+}
+
+.memorial-image::after {
+  /* Pink square */
+  width: 120px;
+  height: 120px;
+  background-color: #ffc1e3; /* Light pink */
+  top: 80px;
+  right: -50px;
+}
+
+/* Heart shape styling */
+.heart-shape {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #ffc1e3; /* Light pink for heart */
+  top: -30px;
+  left: 40px;
+  clip-path: polygon(50% 0%, 100% 33%, 82% 100%, 50% 75%, 18% 100%, 0% 33%);
+  z-index: 0;
+}
+
+/* Memorial content styling */
+.memorial-content {
+  
+  padding-right: 50px; /* Added padding at the right side */
+  text-align: left; /* Align text on the right */
+}
+
+.memorial-content h2 {
+  font-size: 32px;
+  color: #4d4d4d; /* Updated heading color */
+  margin-bottom: 15px;
+}
+
+.memorial-content p {
+  font-size: 18px;
+  color: #757575; /* Updated paragraph color */
+  margin-bottom: 40px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .memorial-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .memorial-content {
+      padding-right: 0;
+      text-align: center;
+  }
+}
+
+
+
+
+
+
